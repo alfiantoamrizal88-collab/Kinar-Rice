@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinar Rice (Kinan & Athar)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #ffffff);
+      color: #1b5e20;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    section.hero {
+      padding: 60px 20px;
+      text-align: center;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"><rect width="800" height="400" fill="%23e8f5e9"/><path d="M100 300 Q200 200 300 300 T500 300 T700 300" stroke="%232e7d32" stroke-width="6" fill="none"/><circle cx="200" cy="180" r="20" fill="%234caf50"/><circle cx="260" cy="160" r="18" fill="%234caf50"/></svg>');
+      background-size: cover;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .products {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .card svg {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #43a047;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- ChatGPT Image 20 Jan 2026, 10.50.10.png -->
+  <img src="ChatGPT Image 20 Jan 2026, 10.50.10.png" alt="Logo Kinar Rice" />
+  <h1>Kinar Rice</h1>
+  <p>Kinan & Athar</p>
+</header>
+
+<section class="hero">
+  <h1>Beras Putih, Berkualitas, Pulen & Bersih</h1>
+  <p> Harga Terjangkau • Siap Antar</p>
+  <a href="https://wa.me/6287700996275" class="btn">Pesan via WhatsApp</a>
+</section>
+
+<section style="padding:40px 20px; text-align:center;">
+  <h2>Tentang Kinar Rice</h2>
+  <p>Kinar Rice (Kinan & Athar) menyediakan beras pilihan yang pulen, bersih, dan berkualitas. Kami berkomitmen menghadirkan beras terbaik untuk kebutuhan rumah tangga maupun usaha.</p>
+</section>
+
+<section style="padding:40px 20px; text-align:center; background:#f1f8f4;">
+  
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:45px;margin-top:50px;">
+    <div class="card">🌾 Karung Beras Premium</div>
+    <div class="card">🍚 Beras Putih Pulen</div>
+    <div class="card">🌾 Padi Pilihan</div>
+  </div>
+</section>
+
+<section class="products">
+  <div class="card">
+    <svg viewBox="0 0 64 64"><ellipse cx="32" cy="40" rx="20" ry="12" fill="#a5d6a7"/><ellipse cx="32" cy="36" rx="18" ry="10" fill="#c8e6c9"/></svg>
+    <h3>5 Kg</h3>
+    <p>Cocok untuk rumah tangga</p>
+  </div>
+  <div class="card">
+    <svg viewBox="0 0 64 64"><rect x="16" y="20" width="32" height="28" rx="6" fill="#81c784"/></svg>
+    <h3>10 Kg</h3>
+    <p>Lebih hemat & praktis</p>
+  </div>
+  <div class="card">
+    <svg viewBox="0 0 64 64"><rect x="12" y="16" width="40" height="32" rx="6" fill="#66bb6a"/></svg>
+    <h3>25 Kg</h3>
+    <p>Untuk usaha & kebutuhan besar</p>
+  </div>
+  <div class="card">
+    <svg viewBox="0 0 64 64"><rect x="10" y="14" width="44" height="36" rx="6" fill="#4caf50"/></svg>
+    <h3>50 Kg</h3>
+    <p>Harga paling ekonomis</p>
+  </div>
+</section>
+
+<section style="padding:40px 20px; text-align:center;">
+  <h2>Pesan Sekarang (Toko Online Sederhana)</h2>
+  <p>Isi form sederhana di bawah, kami akan hubungi via WhatsApp</p>
+  <form onsubmit="window.location.href='https://wa.me/6287700996275?text=Saya%20ingin%20pesan%20beras%20Kinar%20Rice'; return false;" style="max-width:400px;margin:0 auto;">
+    <input type="text" placeholder="Nama Anda,Alamat,No HP" required style="width:100%;padding:10px;margin:8px 0;" />
+    <select style="width:100%;padding:10px;margin:8px 0;">
+      <option>5 Kg</option><option>10 Kg</option><option>25 Kg</option><option>50 Kg</option>
+    </select>
+    <button class="btn" type="submit">Kirim Pesanan</button>
+  </form>
+</section>
+
+<section style="padding:40px 20px; text-align:center; background:#e8f5e9;">
+  <h2>Website Resmi Kinar Rice</h2>
+  <p>Website ini bisa diakses gratis dengan domain seperti:</p>
+  <p><strong>kinar-rice.netlify.app</strong> atau <strong>kinar-rice.github.io</strong></p>
+  <p>Siap dibantu sampai website online & bisa dibuka pelanggan.</p>
+</section>
+
+<footer>
+  <p>© 2026 Kinar Rice (Kinan & Athar)</p>
+  <p>Siap Antar Area Perdos & Sekitarnya</p>
+  <a href="https://wa.me/6287700996275" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 8px rgba(0,0,0,0.3);">WhatsApp</a>
+</footer>
+
+</body>
+</html>
